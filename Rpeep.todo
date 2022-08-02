@@ -1,0 +1,41 @@
+'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+Enter' // Triggers `Todo: Toggle Box`
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancelled`
+'Alt+S' // Triggers `Todo: Toggle Start`
+'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
+Inscription:
+  https://serversmtp.com/en/cart.php?carttpl=2clic
+DASHBOARD:
+  
+USERS:
+
+ADS:  
+  
+Products:  
+
+Prise:
+
+Coupons: 
+
+Contactes:
+
+Winners:
+
+Payments:
+
+Reclamations:
+
+historique:
+  
+TECHNIQUE:
+    ☐ Email Verification
+    ☐ Mobile Verification
+    ☐ E-Coupon API
+    ☐ Tap API
+    ☐ SMS API Twilio.com
+    ☐ Emailing API
+
+Archive:
+  ✔ Closed product @done(22-04-14 15:45) @project(Mobile)
+  ✔ Winners @started(22-04-14 15:41) @done(22-04-14 15:44) @lasted(3m39s) @project(Mobile)

@@ -1,0 +1,98 @@
+<div class="content-wrapper container-xxl p-0">
+    <div class="content-body">
+      <app-content-header [contentHeader]="contentHeader"></app-content-header>
+      <section>
+       <div class="card">
+         <div class="card-body">
+           <div class="card-text">
+             <p></p>
+          <h2>{{'addProduct'| translate}}</h2>
+          <div class=" my-1 font-weight-bold">
+            <div class=" my-1 font-weight-bold">
+              <div class="form-group">
+                <label for="largeInput">{{'ProductName'| translate}}</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Name" [(ngModel)]="pro.Name" required="" type="text" />
+              </div>
+              </div>
+            
+             <div class=" my-1 font-weight-bold">
+              <div class="form-group">
+                <label for="largeInput">{{'ProductPrice'| translate}}</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Price" [(ngModel)]="pro.Price" class="form-control input-md" required="" type="text"/>
+              </div>
+              </div>
+              <div class=" my-1 font-weight-bold">
+                <div class="form-group">
+                  <label for="largeInput">{{'ProductAmount'| translate}}</label>
+                  <input class="form-control form-control-lg" type="text" placeholder="Amount" [(ngModel)]="pro.Amount" class="form-control input-md" required="" type="text" />
+                </div>
+                </div>
+        
+          <div class=" my-1 font-weight-bold">
+            <div class="form-group">
+              <label for="basicTextarea">{{'ProductDescription'| translate}}</label>
+            <fieldset class="form-group">
+              <textarea class="form-control" id="basicTextarea" rows="3" placeholder="Description" [(ngModel)]="pro.Description" class="form-control input-md" required="" type="text"></textarea>
+            </fieldset>
+            </div>
+          </div>
+          <div class=" my-1 font-weight-bold">
+            <label for="basicTextarea">{{'ProductDescription'| translate}}</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <select class="custom-select" id="inputGroupSelect01" [(ngModel)]="pro.Prize" >
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            </div>
+          
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                  type="file"
+                  name="image"
+                  ng2FileSelect
+                  [uploader]="uploader"
+                  accept="image/x-png,image/gif,image/jpeg"
+                />
+                </div>
+                </div>
+              
+             <div class="row my-1 font-weight-bold">
+              <div class="form-group col-md-3">
+                <label for="largeInput">{{'Productgeneral'| translate }}</label>
+                <input class="form-control" type="radio" name="offre" (click)="DrawDate();" value="1" placeholder="Name" [(ngModel)]="pro.Offres" class="form-control input-md" required="" checked/>
+              </div>
+              
+              
+
+              <div class="form-group col-md-3">
+                <label for="largeInput">{{'ProductOffers'| translate }}</label>
+                <input class="form-control" type="radio" name="offre" (click)="ClosingDate();" value="0" placeholder="Name" [(ngModel)]="pro.Offres" class="form-control input-md" required="" />
+              </div>
+              
+            </div>
+
+            <div class=" my-1 font-weight-bold">
+                <div class="form-group">
+                  <label for="largeInput" >{{'ProductClosingDate'| translate}}</label>
+                  <input class="form-control form-control-lg" type="input" name="offre"  placeholder="ClosingDate"  [(ngModel)]="pro.ClosingDate" class="form-control input-md" required="" />
+                </div>
+               
+            </div>
+           
+        </div> 
+          
+         <div class="text-center">
+           <button type="button" class="btn btn-primary mr-1 mt-1" rippleEffect (click)="Add()">{{'ProductAdd'| translate}}</button>
+         
+         </div>
+         </div>
+         </div>
+       </div>
+    
+

@@ -1,0 +1,47 @@
+<div class="content-wrapper container-xxl p-0">
+  <div class="content-body">
+    <app-content-header [contentHeader]="contentHeader"></app-content-header>
+    <section>
+     <div class="card">
+       <div class="card-body">
+         <div class="card-text">
+           <p></p>
+        <h2>{{'CouponAdd'| translate}}</h2>
+        <div class=" my-1 font-weight-bold">
+          <div class=" my-1 font-weight-bold">
+            <div class="form-group">
+              <label for="largeInput">{{'Couponcardnumber'| translate}}</label>
+              <input class="form-control form-control-lg" type="text" placeholder="Coupon card number" [(ngModel)]="co.Couponcardnumber" required="" type="text" />
+            </div>
+            </div>
+          
+           <div class=" my-1 font-weight-bold">
+            <div class="form-group">
+              <label for="largeInput">{{'ProductName'| translate}}</label>
+              <input class="form-control form-control-lg" type="text" placeholder="Product Name" [(ngModel)]="co.ProductName" class="form-control input-md" required="" type="text"/>
+            </div>
+            </div>
+            <div class=" my-1 font-weight-bold">
+              <div class="form-group">
+                <label for="largeInput">{{'discount'| translate}}</label>
+                <input class="form-control form-control-lg" type="text" placeholder="discount" [(ngModel)]="co.discount" class="form-control input-md" required="" type="text" />
+              </div>
+              </div>
+      
+        <div class=" my-1 font-weight-bold">
+          <div class="form-group">
+            <label for="basicTextarea">{{'PriezDay'| translate}}</label>
+            <input class="form-control form-control-lg" type="text" placeholder="Priez.Day" [(ngModel)]="co.PriezDay" class="form-control input-md" required="" type="text">
+          </div>
+        </div>
+       </div> 
+        
+       <div class="text-center">
+         <button type="button" class="btn btn-primary mr-1 mt-1" rippleEffect (click)="Add()">{{'AddCoupon'| translate}}</button>
+       
+       </div>
+       </div>
+       </div>
+     </div>
+  
+

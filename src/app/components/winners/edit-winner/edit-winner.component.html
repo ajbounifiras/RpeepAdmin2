@@ -1,0 +1,137 @@
+<div class="content-wrapper container-xxl p-0">
+    <div class="content-body">
+      <app-content-header [contentHeader]="contentHeader"></app-content-header>
+      <section>
+       <div class="card">
+         <div class="card-body">
+           <div class="card-text">
+      <div class="card">
+  
+      <div class="card-header card-header-rose card-header-icon">
+    
+        <h2>{{'EditWinner'| translate}}</h2> 
+    
+      </div>
+      <!--/card-header-->
+    
+    
+      <div class="card-body ">
+    
+        <form class="form form-vertical">
+  
+          <div class="row">
+  
+            <div class="col-6">
+              <div class="form-group">
+  
+                <label for="first-name-icon">{{'WinnerName'| translate}}</label>
+                <div class="input-group input-group-merge">
+                  <div class="input-group-prepend">
+  
+                    <!--pour que l'icone soit au meme niveau que l'input-->
+                    <span class="input-group-text"><span [data-feather]="'user'"></span></span>
+                    <!--2eme span :pour que l'icone s'affiche + 1ere span: ise  positionne bien -->
+                  </div>
+                  <input type="text" id="userName" class="form-control" name="userName" placeholder="User Name" [(ngModel)]="w.userName" class="form-control input-md" required="" type="text">
+  
+                </div>
+              </div>
+              <!--/form group-->
+            </div>
+            <!--/col-6-->
+  
+  
+            <div class="col-6">
+              <div class="form-group ">
+  
+                <label for="first-name-icon">{{'WinnerLastName'| translate}}</label>
+                <div class="input-group input-group-merge">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><span [data-feather]="'user'"></span></span>
+                  </div>
+                  <input type="text" id="userLastname" class="form-control" name="userLastname" placeholder="Last Name"
+                  [(ngModel)]="w.LastName" class="form-control input-md" required="" type="text">
+  
+                </div>
+  
+              </div>
+              <!--/form group-->
+            </div>
+            <!--/col-6-->
+  
+          </div>
+          <!--/row-->
+  
+  
+          <div class="row">
+  
+            <div class="col-6">
+              <div class="form-group">
+  
+                <label for="email-id-icon">{{'WinnerEmail'| translate}}</label>
+                <div class="input-group input-group-merge">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><span [data-feather]="'mail'"></span></span>
+                  </div>
+                  <input type="email" id="userMail" class="form-control" name="userMail" placeholder="Email" [(ngModel)]="w.email" class="form-control input-md" required="" type="text">
+                </div>
+              </div>
+              <!--/form group-->
+            </div>
+            <!--/col-md-6-->
+  
+  
+            <div class="col-6">
+              <div class="form-group">
+  
+                <label for="contact-info-icon">{{'WinnerPhoneNumber'| translate}} </label>
+                <div class="input-group input-group-merge">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><span [data-feather]="'smartphone'"></span></span>
+                  </div>
+                  <input type="number" id=" userTel" class="form-control" name=" userTel" placeholder="Mobile"
+                    placeholder="Enter user phone number"[(ngModel)]="w.phoneNumber" class="form-control input-md" required="" type="text">
+                </div>
+  
+              </div>
+              <!--/form group-->
+            </div>
+            <!--/col-md-6-->
+  
+          </div>
+  
+  
+          <div class="col-md-4">
+            <div class="form-group">
+              <small>{{'WinnerPicture'| translate}} </small>
+              <input
+              type="file"
+              name="image"
+              ng2FileSelect
+              [uploader]="uploader"
+              accept="image/x-png,image/gif,image/jpeg"
+            />
+            </div>
+          <!--/row-->
+  
+  
+          <br> <br>
+  
+          <div class="row align ">
+  
+            <div class="row addBtn">
+  
+              <div class="col-md-7 ">
+                <button type="submit" class="btn btn-gradient-primary btn-fw" (click)="Edit()" >{{'EditWinner' | translate}}</button>
+              </div>
+  
+            </div>
+         </div>
+          </div>
+        </form>
+        <!--/form form-vertical-->
+      </div>
+      <!--/card-body-->
+    </div>
+    <!--/card-->
+    

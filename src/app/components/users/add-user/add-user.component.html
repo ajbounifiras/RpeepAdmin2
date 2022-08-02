@@ -1,0 +1,182 @@
+<div class="content-wrapper container-xxl p-0">
+  <div class="content-body">
+    <app-content-header [contentHeader]="contentHeader"></app-content-header>
+    <section>
+     <div class="card">
+       <div class="card-body">
+         <div class="card-text">
+<div class="card">
+
+  <div class="card-header card-header-rose card-header-icon">
+
+    <h2>{{'AddUser'| translate}}</h2> 
+
+  </div>
+  <!--/card-header-->
+
+
+  <div class="card-body ">
+
+    <div class="col-md-12">
+
+      <form class="form form-vertical">
+
+        <div class="row">
+
+          <div class="col-6">
+            <div class="form-group">
+
+              <label for="first-name-icon">{{'UserName'| translate}}</label>
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend">
+
+                  <!--pour que l'icone soit au meme niveau que l'input-->
+                  <span class="input-group-text"><span [data-feather]="'user'"></span></span>
+                  <!--2eme span :pour que l'icone s'affiche + 1ere span: ise  positionne bien -->
+                </div>
+                <input type="text" id="userName" class="form-control" name="userName" placeholder="User Name" [(ngModel)]="u.firstName" class="form-control input-md" required="" />
+
+              </div>
+
+            </div>
+            <!--/form group-->
+          </div>
+          <!--/col-6-->
+
+
+          <div class="col-6">
+            <div class="form-group ">
+
+              <label for="first-name-icon">{{'UserLastName'| translate}}</label>
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><span [data-feather]="'user'"></span></span>
+                </div>
+                <input type="text" id="userLastname" class="form-control" name="userLastname" placeholder="Last Name" [(ngModel)]="u.lastName" class="form-control input-md" required="" />
+
+              </div>
+
+            </div>
+            <!--/form group-->
+          </div>
+          <!--/col-6-->
+
+        </div>
+        <!--/row-->
+
+
+        <div class="row">
+
+          <div class="col-6">
+            <div class="form-group">
+
+              <label for="email-id-icon">{{'UserEmail'| translate}}</label>
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><span [data-feather]="'mail'"></span></span>
+                </div>
+                <input type="email" id="userMail" class="form-control" name="userMail" placeholder="Email" [(ngModel)]="u.email" class="form-control input-md" required="" type="text"/>
+              </div>
+ 
+
+            </div>
+            <!--/form group-->
+          </div>
+          <!--/col-md-6-->
+
+
+          <div class="col-6">
+            <div class="form-group">
+
+              <label for="contact-info-icon">{{'UserPhoneNumber'| translate}} </label>
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><span [data-feather]="'smartphone'"></span></span>
+                </div>
+                <input type="number" id=" userTel" class="form-control" name=" userTel" placeholder="Mobile"
+                  placeholder="Enter user phone number"[(ngModel)]="u.phone" class="form-control input-md" required="" type="text"/>
+              </div>
+
+            </div>
+            <!--/form group-->
+          </div>
+          <!--/col-md-6-->
+
+        </div>
+        <!--/row-->
+
+
+        <div class="row">
+
+          <div class="col-6">
+            <div class="form-group">
+
+              <label for="role">{{'UserRole'| translate}}</label>
+            
+              <input type="text" id="userRole" class="form-control" name="userRole" placeholder="Role" [(ngModel)]="u.role" class="form-control input-md" required="" />
+            </div>
+            <!--/form group-->
+          </div>
+          <!--/col-md-6-->
+
+          <div class="col-6">
+            <div class="form-group">
+
+              <label for="password-icon">{{'UserPassword'| translate}}</label>
+              <div class="input-group input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><span [data-feather]="'lock'"></span></span>
+                </div>
+                <input type="password" id="userPassword" class="form-control" name="userPassword" placeholder="Password"
+                [(ngModel)]="u.password" class="form-control input-md" required=""  minlength="6" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}">
+              </div>
+
+            </div>
+            <!--/form group-->
+          </div>
+        </div>
+        <!--/row-->
+
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <input
+            type="file"
+            name="image"
+            ng2FileSelect
+            [uploader]="uploader"
+            accept="image/x-png,image/gif,image/jpeg"
+          />
+          </div>
+          </div>
+         
+
+          <br>
+         
+        <br> <br>
+
+        <div class="row align ">
+
+          <div class="row addBtn">
+
+            <div class="col-md-7 ">
+              <button type="submit" class="btn btn-gradient-primary btn-fw" (click)="Add()">{{'AddUser' | translate}}</button>
+            </div>
+
+          </div>
+
+        </div>
+        <!--/row align-->
+
+
+
+      </form>
+      <!--/form form-vertical-->
+    </div>
+    <!--/col-md-12-->
+
+
+  </div>
+  <!--/card-body-->
+</div>
+<!--/card-->

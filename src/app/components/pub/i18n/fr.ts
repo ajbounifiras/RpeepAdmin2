@@ -1,0 +1,28 @@
+export const locale = {
+  lang: 'fr',
+  data: {
+    addPub:'Ajouter Pub',
+    PubTitle:'Pub Titre',
+    PubDescription:'Pub Description',
+    PubLink:'Pub Lien',
+    PubType:'Pub Type',
+    PubOrder:'Pub Order',
+    DateDebut:'Date Debut',
+    DateFin:'Date Fin',
+    Pubactive:'Pub active',
+    PubDesactive:'Pub Desactive',
+    EditPub:'Modifier Pub',
+    PubsShow:'Pubs Spectacle',
+    PubsPrincipalImage:'Pubs Principal Image',
+    PubsTitle:'Pubs Titre',
+    PubsDescription:'Pubs Description',
+    PubsLink:'Pubs Lien',
+    PubsType:'Pubs Type',
+    PubsOrder:'Pubs Order',
+    PubsDateDebut:'Pubs Date Debut',
+    PubsDateFin:'Pubs Date Fin',
+    PubsActive:'Pubs Active',
+    PubsDesactive:'Pubs Desactive',
+    PubsActions:'Pubs Actions',
+  }
+}

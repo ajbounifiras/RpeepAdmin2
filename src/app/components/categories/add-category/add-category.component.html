@@ -1,0 +1,42 @@
+<div class="content-wrapper container-xxl p-0">
+  <div class="content-body">
+    <app-content-header [contentHeader]="contentHeader"></app-content-header>
+    <section>
+     <div class="card">
+       <div class="card-body">
+         <div class="card-text">
+           <p></p>
+        <h2>{{'category.Addnewcategory'| translate}}</h2>
+        <div class=" my-1 font-weight-bold">
+        <div class="form-group">
+         <label for="selectLarge">{{'category.Category'| translate}}</label>
+         <select class="form-control form-control-lg mb-1" id="selectLarge">
+           <option selected>{{'category.Openthisselectmenu'| translate}}</option>
+           <option value="1">Home --> Electronics </option>
+           <option value="2">Home --> Men's Fashion </option>
+           <option value="3">Home --> Women's Fashion </option>
+           <option value="4">Home --> Baby - Kids </option>
+           <option value="5">Home --> Home & Garden</option>
+         </select>
+       </div>
+       <div class=" my-1 font-weight-bold">
+         <div class="form-group">
+           <label for="largeInput">{{'Complaint.Title'| translate}}</label>
+           <input class="form-control form-control-lg" type="text" placeholder="Title" />
+         </div>
+       </div>
+       <div class=" my-1 font-weight-bold">
+       <label for="basicTextarea">{{'Contact.Description'| translate}}</label>
+       <fieldset class="form-group">
+         <textarea class="form-control" id="basicTextarea" rows="3" placeholder="Description"></textarea>
+       </fieldset>
+       </div>
+       <div class="text-center">
+         <button type="button" class="btn btn-primary mr-1 mt-1" rippleEffect>{{'Contact.Add'| translate}}</button>
+         <button type="button" class="btn btn-outline-secondary mt-1" rippleEffect>{{'User.Cancel'| translate}}</button>
+       </div>
+       </div>
+       </div>
+     </div>
+   </div>
+   </section>

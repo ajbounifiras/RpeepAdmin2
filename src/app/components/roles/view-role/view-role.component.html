@@ -1,0 +1,124 @@
+<div class="content-wrapper container-xxl p-0">
+    <div class="content-body">
+      <app-content-header [contentHeader]="contentHeader"></app-content-header>
+      <section>
+       <div class="card" style="overflow-y: scroll;">
+         <div class="card-body">
+           <div class="card-text">
+             <p></p>
+          <h2>{{'Role.ListofRoles'| translate}}</h2>
+        
+              <label class="d-flex align-items-center mt-2 ml-1 ml-md-0">:{{'User.search'| translate}}
+                <input 
+                  name="searchValue"
+                  type="search"
+                  class="form-control ml-25" />
+                </label>
+  
+                <div class="row" id="basic-table">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="table-responsive ">
+                        <table class="table mt-2">
+                          <thead>
+                            <tr>
+                              <th>{{'Role.id'| translate}}</th>
+                              <th>{{'Role.Title'| translate}}</th>
+                              <th>{{'Role.Description'| translate}}</th>
+                              <th>{{'Role.Actions'| translate}}</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                               <span class="font-weight-bold"> 1</span>
+                              </td>
+                              <td><div class="badge badge-glow badge-danger">{{'Role.Admin'| translate}}</div></td>
+                              <td>
+                                <span class="font-weight-bold">An Admin provides office support to either an individual or team and is vital for the smooth-running of a business.</span>
+                              </td>
+                              
+                              <td class="overflow-hidden">
+                                <div ngbDropdown container="body">
+                                  <button type="button" class="btn btn-sm hide-arrow" ngbDropdownToggle data-toggle="dropdown">
+                                    <i data-feather="more-vertical"></i>
+                                  </button>
+                                  <div ngbDropdownMenu>
+                                    <a ngbDropdownItem href="javascript:void(0);"
+                                      ><i data-feather="edit-2" class="mr-50"></i><span>{{'Role.Edit'| translate}}</span></a
+                                    ><a ngbDropdownItem href="javascript:void(0);"
+                                      ><i data-feather="trash" class="mr-50"></i><span>{{'Role.Delete'| translate}}</span></a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                               <span class="font-weight-bold" > 2</span>
+                              </td>
+                              <td><div class="badge badge-glow badge-success">{{'Role.advertiser'| translate}}</div></td>
+                              <td>
+                                <span class="font-weight-bold" >An Announcer is a person who makes commercial announcements.</span>
+                              </td>
+                            
+                              <td class="overflow-hidden">
+                                <div ngbDropdown container="body">
+                                  <button type="button" class="btn btn-sm hide-arrow" ngbDropdownToggle data-toggle="dropdown">
+                                    <i data-feather="more-vertical"></i>
+                                  </button>
+                                  <div ngbDropdownMenu>
+                                    <a ngbDropdownItem href="javascript:void(0);"
+                                      ><i data-feather="edit-2" class="mr-50"></i><span>{{'Role.Edit'| translate}}</span></a
+                                    ><a ngbDropdownItem href="javascript:void(0);"
+                                      ><i data-feather="trash" class="mr-50"></i><span>{{'Role.Delete'| translate}}</span></a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span
+                                  class="font-weight-bold"
+                                  >3</span
+                                >
+                              </td>
+                              <td><div class="badge badge-glow badge-secondary">{{'Role.Client'| translate}}</div></td>
+                              <td>
+                                <span class="font-weight-bold" >A person who engages to buy some products or services </span>
+                              </td>
+                              
+                              <td class="overflow-hidden">
+                                <div ngbDropdown container="body">
+                                  <button type="button" class="btn btn-sm hide-arrow" ngbDropdownToggle data-toggle="dropdown">
+                                    <i data-feather="more-vertical"></i>
+                                  </button>
+                                  <div ngbDropdownMenu>
+                                    <a ngbDropdownItem href="javascript:void(0);"
+                                      ><i data-feather="edit-2" class="mr-50"></i><span>{{'Role.Edit'| translate}}</span></a
+                                    ><a ngbDropdownItem href="javascript:void(0);"
+                                      ><i data-feather="trash" class="mr-50"></i><span>{{'Role.Delete'| translate}}</span></a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+              </div>
+         </div>
+        
+        
+       
+     </section>
+  </div>
+  </div>

@@ -1,0 +1,35 @@
+<div class="content-wrapper container-xxl p-0">
+    <div class="content-body">
+      <app-content-header [contentHeader]="contentHeader"></app-content-header>
+      <section>
+       <div class="card">
+         <div class="card-body">
+           <div class="card-text">
+             <p></p>
+          <h2>{{'Addcomplaint'| translate}}</h2>
+          <div class=" my-1 font-weight-bold">
+            <div class=" my-1 font-weight-bold">
+              <div class="form-group">
+                <label for="largeInput">{{'ComplaintTitle'| translate}}</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Title" [(ngModel)]="r.title" class="form-control input-md" required="" type="text"  />
+              </div>
+            </div>
+            
+          <div class=" my-1 font-weight-bold">
+            <div class="form-group">
+              <label for="basicTextarea">{{'ComplaintDescription'| translate}}</label>
+            <fieldset class="form-group">
+              <textarea class="form-control" id="basicTextarea" rows="3" placeholder="Description"[(ngModel)]="r.description" class="form-control input-md" required="" type="text">
+              </textarea>
+            </fieldset>
+            </div>
+          </div>
+         <div class="text-center">
+           <button type="button" class="btn btn-primary mr-1 mt-1" rippleEffect (click)="Add()">{{'Addcomplaint'| translate}}</button>
+         </div>
+         </div>
+         </div>
+       </div>
+     </div>
+     </section>
+
